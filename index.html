@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Personal Finance Tracker</h1>
+
+  <form id="transaction-form">
+    <input type="number" id="amount" placeholder="Amount" required />
+    <select id="type">
+      <option value="Income">Income</option>
+      <option value="Expense">Expense</option>
+    </select>
+    <input type="text" id="category" placeholder="Category" required />
+    <input type="date" id="date" required />
+    <input type="text" id="note" placeholder="Note (optional)" />
+    <button type="submit">Add Transaction</button>
+  </form>
+
+  <h2>Transactions</h2>
+  <ul id="transaction-list"></ul>
+
+  <button onclick="location.href='summary.html'">View Summary</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
